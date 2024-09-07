@@ -1,12 +1,6 @@
-var dashEmail = document.getElementById('dashEmail');
 
-var dashUsername = document.getElementById('dashUsername');
-var dashUsernam = document.getElementById('dashUsernam');
-var profileUsername = document.getElementById('profileUsername');
-var dashBalance = document.getElementById('dashBalance');
-var dashEarnings = document.getElementById('dashEarnings');
-var dashReturns = document.getElementById('dashReturns');
-var profilePics = document.getElementById('profile-pics');
+var profilePics = document.getElementById('pics');
+var profilePic1 = document.getElementById('profile-pics');
 
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -21,18 +15,9 @@ firebase.auth().onAuthStateChanged((user) => {
             var userDetails = doc.data();
             console.log("Document data:", userDetails);
            
-            var upper = userDetails.username[0].toUpperCase() + userDetails.username.slice(1);
-          
-            dashUsername.innerHTML = 'Hello,' + ' ' + upper;
-            
-            dashBalance.innerHTML = '$'+ userDetails.wallet;``
-         
-            dashEarnings.innerHTML = '$'+ userDetails.bonus;
-            //dashEmail.innerHTML = userDetails.email;
-            //dashUsernam.innerHTML = upper;
-            dashReturns.innerHTML = '$' + (userDetails.wallet + userDetails.bonus);
-
+           
             profilePics.src = userDetails.imageUrl;
+            profilePic1.src = userDetails.imageUrl;
            
             
             
