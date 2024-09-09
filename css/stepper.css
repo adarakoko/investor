@@ -98,6 +98,10 @@ h2 {
     display: none;
 }
 
+#bankAddress{
+    display:none;
+}
+
 .usdt h1{
     font-size:30px;
 }

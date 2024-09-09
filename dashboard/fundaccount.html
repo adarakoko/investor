@@ -298,39 +298,59 @@
 															<option id="" value="" >Select a payment type</option>
 															<option id="btc" value="BITCOIN">BITCOIN</option>
 															<option id="usdt" value="USDTTRC20" >USDT TRC20</option>
+															<option id="bank" value="BANKTRANSFER" >WIRE BANK TRANSFER</option>
 														</select>
 													</div>
 
 													<div class="bitcoin mt-3" id="btcAddress">
 														<div class="btcCopy">
-															<h1 id="BTC">bc1qpgfe5p4evmhxlfp20f<br>jk23kd33cd54hh67mfqj</h1>
-															<button onclick="myFunction1()"><i class="bi bi-clipboard" style="color: darkorange; font-weight:800px;" title="copy"></i></button>
+															<h1 id="BTC"></h1>
+															<!--<h1 id="BTC">bc1qpgfe5p4evmhxlfp20f<br>jk23kd33cd54hh67mfqj</h1>-->
+															<!-- <button onclick="myFunction1()"><i class="bi bi-clipboard" style="color: darkorange; font-weight:800px;" title="copy"></i></button> -->
 														</div>
 														<br>
 														<p style="text-align: center;">Or Scan to pay</p><br>
 														<div class="btcCopy">
-															<img src="../images/btcinvest.png" alt="bitcoin qrcode" />
+															<!-- <img src="../images/btcinvest.png" alt="bitcoin qrcode" id="btc-photo"/> -->
+															<img src="" width="200px" height="200px" alt="bitcoin qrcode" id="btc-photo"/>
 														</div>
 														
 													</div>
 
 													<div class="usdt mt-3" id="usdtAddress">
 														<div class="btcCopy">
-															<h1 id="USDT">TPJfFL9c878DtpHJQ<br>Ptn7ezymk8egxWWhH</h1>
-															<button onclick="myFunction2()"><i class="bi bi-clipboard" style="color: darkorange; font-weight:800px;" title="copy"></i></button>
+															<h1 id="USDT"></h1>
+															<!-- <h1 id="USDT">TPJfFL9c878DtpHJQ<br>Ptn7ezymk8egxWWhH</h1> -->
+															<!-- <button onclick="myFunction2()"><i class="bi bi-clipboard" style="color: darkorange; font-weight:800px;" title="copy"></i></button> -->
 														</div>
 														<br>
 														<p style="text-align: center;">Or Scan to pay</p><br>
 														<div class="btcCopy">
-															<img src="../images/usdt.png" alt="bitcoin qrcode" />
+															<img src="" width="200px" height="200px" alt="usdt qrcode" id="usdt-photo"/>
 														</div>
 														
 													</div>
+
+													<div class="mt-3" id="bankAddress">
+															
+															<h1>Wire Transfer</h1>
+															<p id="acctName"></p>
+															<p id="bankName"></p>
+															<p id="acctNum"></p>
+															<p id="routing"></p>
+															<p id="address"></p>
+															<p><b>Minimum amount: $500</b></p>
+							
+													</div>
+
+													<div class="fund-1 mt-3">
+														<button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
+														<button class="button btn-navigate-form-step" type="button" step_number="4">Next</button>
+													</div>
 												</div>
-												<div class="fund-1 mt-3">
-													<button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
-													<button class="button btn-navigate-form-step" type="button" step_number="4">Next</button>
-												</div>
+
+
+												
 											</section>
 											<!-- Step 4 Content, default hidden on page load. -->
 											<section id="step-4" class="form-step d-none">
@@ -427,6 +447,7 @@
 	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
 
 	<script src="../js/config.js" ></script>
 	
@@ -435,6 +456,7 @@
 	<script src="../js/userprofileAccountFund.js"></script>
 	<script src="../js/fundaccount.js"></script>
 	<script src="../js/forAddressCopy.js"></script>
+	<script src="../js/readAccountDetails.js"></script>
 </body>
 
 </html>
