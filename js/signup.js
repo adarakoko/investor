@@ -62,7 +62,7 @@ const registerBtn = document.getElementById("signup").onclick = ((e) => {
         $("#spinner").show()
 
         const today = new Date()
-
+        
         firebase.auth().createUserWithEmailAndPassword(email, password)
             .then((userCredentials) => {
                 db.collection("Nusers").doc(userCredentials.user.uid).set({

@@ -5,6 +5,7 @@ function editProfile() {
     firebase.auth().onAuthStateChanged((user) => {
         console.log(user.uid);
         if (user) {
+            const db = firebase.firestore();
             var profileUsername = document.getElementById('profileUsername').value;
             var profileEmail = document.getElementById('profileEmail').value;
             //const today = new Date();

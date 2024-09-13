@@ -5,7 +5,7 @@ var profilePic1 = document.getElementById('profile-pics');
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      
+        const db = firebase.firestore();
       var uid = user.uid;
       
       var docRef = db.collection("Nusers").doc(uid);

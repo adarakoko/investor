@@ -7,7 +7,7 @@ firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       
       var uid = user.uid;
-      
+      const db = firebase.firestore();
       var docRef = db.collection("Nusers").doc(uid);
       // ...
       docRef.get().then((doc) => {

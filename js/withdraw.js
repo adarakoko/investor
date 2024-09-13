@@ -5,6 +5,7 @@ function submitWithdrawal() {
     firebase.auth().onAuthStateChanged((user) => {
         console.log(user.uid);
         if (user) {
+            const db = firebase.firestore();
             var docRef = db.collection("Nusers").doc(user.uid);
             var withdrawAmount = document.getElementById('withdrawAmount').value;
             var withdrawType = document.getElementById('withdrawSelect').value;

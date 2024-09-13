@@ -7,6 +7,7 @@ function sendMessage() {
     firebase.auth().onAuthStateChanged((user) => {
         console.log(user.uid);
         if (user) {
+            const db = firebase.firestore();
             var docRef = db.collection("Nusers").doc(user.uid);
             var messageTitle = document.getElementById('messageTitle').value;
             var messageText = document.getElementById('messageText').value;

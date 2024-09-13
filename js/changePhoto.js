@@ -10,7 +10,7 @@ function changePhoto() {
         if (user) {
          
             //const today = new Date();
-            
+            const db = firebase.firestore();
             const ref = firebase.storage().ref();
             var file = document.getElementById('photo').files[0];
             const kname = +new Date() + "-" + file.name;

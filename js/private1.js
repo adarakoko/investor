@@ -19,6 +19,7 @@ function private1() {
         firebase.auth().onAuthStateChanged((user) => {
             console.log(user.uid);
             if (user) {
+                const db = firebase.firestore();
                 var docRef = db.collection("Nusers").doc(user.uid);
                 var today = new Date();
                 var priorDate = new Date(new Date().setDate(today.getDate() + 153));
