@@ -25,7 +25,7 @@ firebase.auth().onAuthStateChanged((user) => {
           
             dashUsername.innerHTML = 'Hello,' + ' ' + upper;
             
-            dashBalance.innerHTML = '$'+ userDetails.wallet;``
+            dashBalance.innerHTML = '$'+ userDetails.wallet;
          
             dashEarnings.innerHTML = '$'+ userDetails.bonus;
             //dashEmail.innerHTML = userDetails.email;
