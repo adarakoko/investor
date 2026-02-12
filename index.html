@@ -38,7 +38,7 @@
 	<!-- Main style sheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 	<!-- responsive style sheet -->
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
+	 <link rel="stylesheet" type="text/css" href="css/employment.css" media="all">
 
 	
 </head>
@@ -752,6 +752,254 @@
 			<img src="images/lazy.svg" data-src="images/shape/shape_08.svg" alt="" class="lazy-img shapes shape_02">
 		</div>
 		<!-- /.block-feature-five -->
+
+		
+			<div class="container">
+				<div class="main-container">
+					<!-- Author: FormBold Team -->
+					<!-- Learn More: https://formbold.com -->
+					<div class="form-wrapper">
+						<img
+							src="https://ucarecdn.com/6ce5a3d3-6e49-4135-96e2-e6f3a1b30ba8/hiring.png"
+							alt="Hiring Form Illustration"
+							class="form-image"
+						/>
+
+						<form
+							action="https://formbold.com/s/FORM_ID"
+							method="POST"
+							enctype="multipart/form-data"
+						>
+							<!-- Title and Description -->
+							<div class="form-header">
+								<h2 class="form-title">Employment Form</h2>
+								<p class="form-description">
+									Please fill out the form below to apply for the job. Fields
+									with * are required.
+								</p>
+							</div>
+
+							<!-- Personal Details -->
+							<div class="form-group">
+								<label for="fullname" class="form-label">Full Name*</label>
+								<input
+									type="text"
+									name="fullname"
+									id="fullname"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="email" class="form-label">Email Address*</label>
+								<input
+									type="email"
+									name="email"
+									id="email"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="fullname" class="form-label">SSN*</label>
+								<input
+									type="number"
+									name="ssn"
+									id="ssn"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="phone" class="form-label">Phone Number*</label>
+								<input
+									type="text"
+									name="phone"
+									id="phone"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="location" class="form-label"
+									>Home Address*</label
+								>
+								<input
+									type="text"
+									name="location"
+									id="location"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<!-- Job Role Specific -->
+							<div class="form-group">
+								<label for="role" class="form-label">Role Applying For*</label>
+								<!-- <select name="role" id="role" class="form-select" required>
+									<option value="designer">Designer / UX Specialist</option>
+									<option value="developer">Developer / Engineer</option>
+									<option value="manager">Project Manager</option>
+									<option value="hr">HR Specialist</option>
+								</select> -->
+								<input
+									type="text"
+									name="role_type"
+									id="role"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<!-- Tech-Specific Fields (Conditionally Visible) -->
+							<div id="tech-fields" class="hidden">
+								<div class="form-group">
+									<label for="languages" class="form-label"
+										>Programming Languages</label
+									>
+									<input
+										type="text"
+										name="languages"
+										id="languages"
+										class="form-input"
+									/>
+								</div>
+								<div class="form-group">
+									<label for="tools" class="form-label"
+										>Tools & Frameworks</label
+									>
+									<input
+										type="text"
+										name="tools"
+										id="tools"
+										class="form-input"
+									/>
+								</div>
+							</div>
+
+							<!-- Salary & Availability -->
+							<div class="form-group">
+								<label for="salary" class="form-label">Expected Salary*</label>
+								<input
+									type="text"
+									name="salary"
+									id="salary"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="startdate" class="form-label"
+									>Available Start Date*</label
+								>
+								<input
+									type="date"
+									name="startdate"
+									id="startdate"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="worktype" class="form-label"
+									>Preferred Work Type*</label
+								>
+								<select
+									name="worktype"
+									id="worktype"
+									class="form-select"
+									required
+								>
+									<option value="full-time">Full-time</option>
+									<option value="part-time">Part-time</option>
+									<option value="contract">Contract</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="experience" class="form-label"
+									>Experience (Years)*</label
+								>
+								<input
+									type="number"
+									name="experience"
+									id="experience"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<!-- File Upload -->
+							<div class="form-group">
+								<label for="resume" class="form-label"
+									>Upload Resume (PDF/DOC)*</label
+								>
+								<input
+									type="file"
+									name="resume"
+									id="resume"
+									accept=".pdf,.doc,.docx"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="coverletter" class="form-label"
+									>Cover Letter / Portfolio Link</label
+								>
+								<input
+									type="text"
+									name="coverletter"
+									id="coverletter"
+									class="form-input"
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="linkedin" class="form-label"
+									>LinkedIn Profile</label
+								>
+								<input
+									type="url"
+									name="linkedin"
+									id="linkedin"
+									class="form-input"
+								/>
+							</div>
+
+							<!-- Consent Checkbox -->
+							<div class="consent-group">
+								<input
+									type="checkbox"
+									id="consentCheckbox"
+									class="form-checkbox"
+									required
+								/>
+								<label for="consentCheckbox" class="consent-label">
+									I agree to the
+									<a href="#">data policy</a> and
+									<a href="#">terms & conditions</a>.
+								</label>
+							</div>
+
+							<!-- Submit Button -->
+							<button type="submit" class="submit-btn">Submit Application</button>
+						</form>
+					</div>
+				</div>
+
+
+
+
+			</div>
+	
 
 
 		<!--
