@@ -175,7 +175,7 @@ p {
   font-size: 25px;
   cursor: pointer;
   border-radius: 50%;
-  background: #FF6725;
+  background: rgb(255, 103, 37);
   transition: all 0.3s ease-in-out;
 }
 .scroll-top:after {

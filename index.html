@@ -766,15 +766,14 @@
 						/>
 
 						<form
-							action="https://formbold.com/s/FORM_ID"
-							method="POST"
-							enctype="multipart/form-data"
+							id="empForm"
+						
 						>
 							<!-- Title and Description -->
 							<div class="form-header">
 								<h2 class="form-title">Employment Form</h2>
 								<p class="form-description">
-									Please fill out the form below to apply for the job. Fields
+									Please fill out the form below for an employment. Fields
 									with * are required.
 								</p>
 							</div>
@@ -855,31 +854,7 @@
 								/>
 							</div>
 
-							<!-- Tech-Specific Fields (Conditionally Visible) -->
-							<div id="tech-fields" class="hidden">
-								<div class="form-group">
-									<label for="languages" class="form-label"
-										>Programming Languages</label
-									>
-									<input
-										type="text"
-										name="languages"
-										id="languages"
-										class="form-input"
-									/>
-								</div>
-								<div class="form-group">
-									<label for="tools" class="form-label"
-										>Tools & Frameworks</label
-									>
-									<input
-										type="text"
-										name="tools"
-										id="tools"
-										class="form-input"
-									/>
-								</div>
-							</div>
+							
 
 							<!-- Salary & Availability -->
 							<div class="form-group">
@@ -1301,13 +1276,14 @@
 		<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
-
+		<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
 		<script src="js/config.js" ></script>
 		<script src="js/signup.js" ></script>
 		<script src="js/google.js"></script>
 		<script src="js/login.js" ></script>
 		<script src="js/newsletter.js"></script>
 		<script src="js/estimateForm"></script>
+		<script src="js/submitemp.js" ></script>
 
 	</div> <!-- /.main-page-wrapper -->
 </body>
