@@ -13941,7 +13941,5 @@ html.with-fancybox body.hide-scrollbar {
 }/*# sourceMappingURL=style.css.map */
 
 @media (max-width: 900px){
-  .counter{
-    font-size: 17px;
-}
+  .counter{font-size: 17px;}
 }
