@@ -13939,3 +13939,9 @@ html.with-fancybox body.hide-scrollbar {
 .slick-arrow.slick-hidden {
   display: none;
 }/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 900px){
+  .counter{
+    font-size: 17px;
+}
+}
